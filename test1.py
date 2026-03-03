@@ -1,24 +1,46 @@
-numbers = [5, 10, 15]
+# Object-Oriented Buggy Program
 
-total = 0
+class Calculator:
 
-for i in range(len(numbers)):  
-    total += numbers[i]
+    def __init__(self, numbers):
+        self.numbers = numbers
 
-print("Total:", total)
+    # ❌ Logic error (wrong sum logic)
+    def calculate_sum(self):
+        total = 1
+        for n in self.numbers:
+            total *= n   # should add, not multiply
+        return total
 
-x = "20"
-y = 1
+    # ❌ AttributeError (attribute doesn't exist)
+    def print_length(self):
+        print("Length:", len(self.values))
 
-result = int(x) / y  
-print("Division:", result)
 
-if total > 20:
-    print("Big total")  
+# ❌ KeyError
+data = {"a": 10, "b": 20}
+print("Value of c:", data["c"])
 
-count = len(numbers)
-print("Average:", total / count)  
 
-name = "Test User"
+# ❌ ValueError
+num = int("abc")
+print("Number:", num)
 
-print("Hello " + name)
+
+# ❌ RecursionError (no base condition)
+def factorial(n):
+    return n * factorial(n - 1)
+
+print("Factorial:", factorial(5))
+
+
+# ❌ Infinite loop risk
+i = 0
+while i < 5:
+    print("Looping...")
+    # missing increment
+
+
+calc = Calculator([2, 3, 4])
+print("Sum:", calc.calculate_sum())
+calc.print_length()
