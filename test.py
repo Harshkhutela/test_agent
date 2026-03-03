@@ -1,11 +1,10 @@
-```python
 # Sample Buggy Program
 
 numbers = [10, 20, 30, 40]
 
 total = 0
 
-for i in range(len(numbers)):
+for i in range(5):
     total += numbers[i]
 
 print("Total is:", total)
@@ -13,15 +12,14 @@ print("Total is:", total)
 x = 10
 y = "2"
 
-result = x / int(y)
+result = x / y
 print("Division result:", result)
 
-if total > 50:
+if total > 50
     print("Large total")
-else:
+else
     print("Small total")
 
 name = input("Enter your name: ")
 
-print("Hello " + name)
-```
+print("Hello " + namee)
