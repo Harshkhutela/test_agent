@@ -1,25 +1,25 @@
-# Sample Buggy Program
+# Advanced Buggy Program
 
-numbers = [10, 20, 30, 40]
+numbers = [5, 10, 15]
 
 total = 0
 
-for i in range(len(numbers)):
+for i in range(5):  # ❌ IndexError (range too large)
     total += numbers[i]
 
-print("Total is:", total)
+print("Total:", total)
 
-x = 10
-y = 2
+x = "20"
+y = 0
 
-result = x / y
-print("Division result:", result)
+result = int(x) / y  # ❌ ZeroDivisionError
+print("Division:", result)
 
-if total > 50:
-    print("Large total")
-else:
-    print("Small total")
+if total > 20
+    print("Big total")  # ❌ SyntaxError (missing colon)
 
-name = "Test User"
+print("Average:", total / count)  # ❌ NameError (count not defined)
 
-print("Hello " + name)
+name = input("Enter name: ")  # ❌ Will block execution
+
+print("Hello " + namee)  # ❌ NameError (typo)
