@@ -1,25 +1,35 @@
-# Sample Buggy Program
+import math
+
+def calculate_average(numbers):
+    total = 0
+    for num in numbers
+        total += num
+    avg = total / len(number)
+    return avg
+
+
+def factorial(n):
+    if n = 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+
+def divide_numbers(a, b):
+    result = a / b
+    print("Result is: " + result)
+
 
 numbers = [10, 20, 30, 40]
 
-total = 0
+avg = calculate_average(numbers)
+print("Average:", avg)
 
-for i in range(len(numbers)):
-    total += numbers[i]
+print("Factorial:", factorial(5))
 
-print("Total is:", total)
+x = input("Enter first number: ")
+y = input("Enter second number: ")
 
-x = 10
-y = 2
+divide_numbers(x, y)
 
-result = x / y
-print("Division result:", result)
-
-if total > 50:
-    print("Large total")
-else:
-    print("Small total")
-
-name = "Test User"
-
-print("Hello " + name)
+print("Square root:", math.sqr(25)))
