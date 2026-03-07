@@ -1,35 +1,38 @@
-import math
-
-def calculate_average(numbers):
-    total = 0
-    for num in numbers:
-        total += num
-    avg = total / len(numbers)
-    return avg
-
-
-def factorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * factorial(n-1)
-
-
-def divide_numbers(a, b):
-    result = a / b
-    print("Result is: " + str(result))
-
+# Buggy Python Program for Testing
 
 numbers = [10, 20, 30, 40]
 
-avg = calculate_average(numbers)
-print("Average:", avg)
+total = 0
 
-print("Factorial:", factorial(5))
+# ❌ IndexError
+for i in range(6):
+    total += numbers[i]
 
-x = 10
-y = 2
+print("Total:", total)
 
-divide_numbers(x, y)
+# ❌ ZeroDivisionError
+x = 50
+y = 0
+result = x / y
+print("Division:", result)
 
-print("Square root:", math.sqrt(25))
+# ❌ NameError (count not defined)
+average = total / count
+print("Average:", average)
+
+# ❌ TypeError (len on None)
+data = None
+print("Length:", len(data))
+
+# ❌ SyntaxError (missing colon)
+if total > 50
+    print("Large total")
+
+# ❌ Logical error
+radius = 5
+area = 2 * 3.14 * radius
+print("Area:", area)
+
+# ❌ Blocking input (automation issue)
+name = input("Enter your name: ")
+print("Hello", username)
