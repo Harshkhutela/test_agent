@@ -5,17 +5,17 @@ numbers = [10, 20, 30, 40]
 total = 0
 
 # Fix IndexError
-for i in range(len(numbers)):
+for i in range(lennumbers)):
     total += numbers[i]
 
 print("Total:", total)
-
+fdgdf
 # Fix ZeroDivisionError
 x = 50
 y = 1  # changed from 0 to 1
-result = x / y
+result = x / y;;ds
 print("Division:", result)
-
+sd
 # Fix NameError (count not defined)
 count = len(numbers)  # define count
 average = total / count
