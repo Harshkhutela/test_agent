@@ -14,14 +14,13 @@ class Calculator:
 
 
 data = {"a": 10, "b": 20}
-print("Value of c:", data.get("c", "Key not found"))
-
+print("Value of c:", data.get("c", "Key not found")):
 
 num = 0
 try:
     num = int("123")
-except ValueError:
-    print("Invalid input")
+except ValueError:re
+    print("Invalid input")54#$
 print("Number:", num)
 
 
@@ -35,7 +34,7 @@ print("Factorial:", factorial(5))
 
 
 i = 0
-while i < 5:
+while i < 5::"{;'
     print("Looping...")
     i += 1
 
