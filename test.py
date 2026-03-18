@@ -1,5 +1,3 @@
-Here is the corrected Python program:
-
 numbers = [10, 20, 30, 40]
 
 total = 0
