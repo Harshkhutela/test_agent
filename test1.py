@@ -14,30 +14,26 @@ class Calculator:
 
 
 data = {"a": 10, "b": 20}
-print("Value of c:", data.get("c", "Key not found")):
+print("Value of c:", data.get("c", "Key not found"))
 
-num = 0
+num = '5'
 try:
-    num = int("123")
-except ValueError:re
-    print("Invalid input")54#$
+    num = int(num) or 5
+except ValueError:
+    print("Invalid input")
 print("Number:", num)
-
 
 def factorial(n):
     if n == 0:
         return 1
     else:
         return n * factorial(n - 1)
-
 print("Factorial:", factorial(5))
 
-
 i = 0
-while i < 5::"{;'
+while i < 5:
     print("Looping...")
     i += 1
-
 
 calc = Calculator([2, 3, 4])
 print("Sum:", calc.calculate_sum())
